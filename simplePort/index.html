@@ -1,101 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="newStyle.css">
-    
-    <title>Vinicius de Andrade</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/toggleButtonStyle.css">
+  <title>Vinicius de Andrade</title>
+  <script src="https://kit.fontawesome.com/4cd12089dc.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-
-  <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <span>PT-BR</span>
-
-    <div id="toggleLanguage">
-      <i class="indicatorLanguage"></i>
-    </div>
-
-    <span>EN-US</span>
-  </div>
-
-
-<p>Theme</p>
-<div id="toggle">
-      <i class="indicator"></i>
-    </div>
-  
+  <section class="mainContent">
     <header>
+
+
+      <section class="toggleSection">
+
+        <div class="languageDiv">
+          <div id="toggleLanguage">
+            <i class="indicatorLanguage"></i>
+          </div>
+        </div>
+
+        <div class="themeDiv">
+            <div id="toggleTheme">
+              <i class="indicatorTheme"></i>
+            </div>
+        </div>
+
+      </section>
+
+      <div class="headerTextDiv">
         <h1>Hi, Welcome to my portifolio!</h1>
         <h2>Here you can find all my on-going projects with the stacks im currently working, hope you enjoy :)</h2>
+      </div>
+
+
+
     </header>
 
     <main>
-        <ul>
-            <li>
-                <a href="https://dowhiledesafiobootstrap.andradeviniiciu.repl.co/" target="_blank">
-                    <div class="item">
-                        <h2>The Process</h2>
-                      <div class='itemStack'>
-                      <p>Bootstrap</p>
-                      <p>JS</p>  
-                      <p>Sass</p>  
-                      </div>
-                        
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://andradeviniicius.github.io/portfolioWithBulma/" target="_blank">
-                    <div class="item">
-                        <h2 id="currBulma">Curriculum with Bulma</h2>
-                      <div class='itemStack'>
-                        <p>Bulma</p>
-                        <p>jQuery</p>
-                      </div>
+      <!-- Adicionado ID em alguns elementos para traducao no JS -->
+      <ul>
+        <li>
+          <a href="https://dowhiledesafiobootstrap.andradeviniiciu.repl.co/" target="_blank">
+            <div class="item">
+              <h2>The Process</h2>
+              <div class='itemStack'>
+                <p>Bootstrap</p>
+                <p>JS</p>
+                <p>Sass</p>
+              </div>
 
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://aluracord-dade-9alz7lmk3-andradeviniicius.vercel.app" target="_blank">
-                    <div class="item">
-                        <h2 id="liveChat">Coffebreak RealTime Chat</h2>
-                      <div class='itemStack'>
-                      <p>NextJS</p>
-                      <p>React</p>
-                      <p>Skynexui</p>
-                      <p>CSS</p>
-                      <p>Supabase</p>
-                      </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://andradeviniicius.github.io/portfolioWithBulma/" target="_blank">
+            <div class="item">
+              <h2 id="currBulma">Curriculum with Bulma</h2>
+              <div class='itemStack'>
+                <p>Bulma</p>
+                <p>jQuery</p>
+              </div>
 
-                    </div>
-                </a>
-            </li>
-        </ul>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://aluracord-dade-9alz7lmk3-andradeviniicius.vercel.app" target="_blank">
+            <div class="item">
+              <h2 id="liveChat">Coffebreak RealTime Chat</h2>
+              <div class='itemStack'>
+                <p>NextJS</p>
+                <p>React</p>
+                <p>Skynexui</p>
+                <p>CSS</p>
+                <p>Supabase</p>
+              </div>
+
+            </div>
+          </a>
+        </li>
+      </ul>
     </main>
 
     <footer>
-        <div class="userMedia">
-            <ul id="socialLinks">
-              <li class="github">
-                <a href="https://github.com/andradeviniicius" target="_blank">
-                  <img src="images/github-icon.svg" alt="Ícone github" />
-                </a>
-              </li>
-              <li class="linkedin">
-                <a href="https://www.linkedin.com/in/vinicius-andrade-sc/" target="_blank">
-                  <img src="/images/linkedin-3-16.png" alt="Ícone linkedin" />
-                </a>              
-              </li>
-            </ul>
-          </div>
-  
+      <div class="userMedia">
+        <p>
+          Social media:
+        </p>
+        <ul id="socialLinks">
+          <li>
+            <a href="https://github.com/andradeviniicius" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/vinicius-andrade-sc/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
     </footer>
-    <script src="main.js">
-       
-    </script>
+
+  </section>
+
+  <script src="scripts/main.js"></script>
 </body>
+
 </html>
