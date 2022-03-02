@@ -2,7 +2,7 @@ const toggleLanguage = document.querySelector('#toggleLanguage')
 
 toggleLanguage.addEventListener('click',()=>{
     toggleLanguage.classList.toggle('active')
-        if(toggleLanguage.className==='active'){
+        if(toggleLanguage.className.includes('active')){
             const h1 = document.querySelector('header h1')
             const h2 = document.querySelector('header h2')
             const currBulma = document.querySelector('#currBulma')
@@ -29,9 +29,34 @@ toggleLanguage.addEventListener('click',()=>{
 )
 
 
+
+
 const toggleTheme = document.querySelector('#toggleTheme')
+const toggleThemeLanguage = document.querySelector('#toggleLanguage')
 const body = document.querySelector('body')
+const linkedinIcon = document.querySelector('.fa-linkedin')
+const githubIcon = document.querySelector('.fa-github')
+
 toggleTheme.addEventListener('click',()=>{
     body.classList.toggle('whiteTheme')
-    toggleTheme.classList.toggle('whiteTheme')
+    
+    linkedinIcon.classList.toggle('whiteTheme')
+    githubIcon.classList.toggle('whiteTheme')
+    
+    toggleTheme.classList.toggle('whiteTheme')    
+    toggleThemeLanguage.classList.toggle('whiteTheme')    
+
+
+    const toggleIcon=()=>{
+        const toggleIcon = document.querySelector('#toggleIcon')
+        if(toggleIcon.classList =='gg-sun'){
+            toggleIcon.classList.remove('gg-sun')
+            toggleIcon.classList.add('gg-moon')
+        }
+        else if(toggleIcon.classList == 'gg-moon') {
+            toggleIcon.classList.remove('gg-moon')
+            toggleIcon.classList.add('gg-sun')
+        }
+    }
+    toggleIcon()
 })
