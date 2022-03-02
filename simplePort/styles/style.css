@@ -46,7 +46,9 @@ body {
 }
 
 /* Header */
-/* header{} */
+header{
+  width: 60%;
+}
 
 .toggleSection {
   display: flex;
@@ -350,5 +352,12 @@ footer .userMedia ul li a i {
     font-size: 12px;
   }
 
-  /* NNNNo mobile transferir os botoes para o começo da pagina */
+  /* No mobile transferir os botoes para o burger */
+}
+
+@media(max-width:425px){
+  header {
+    width: 100% ;
+    font-size: 12px;
+  }
 }
