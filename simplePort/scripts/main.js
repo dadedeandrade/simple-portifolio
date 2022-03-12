@@ -36,6 +36,8 @@ const toggleThemeLanguage = document.querySelector('#toggleLanguage')
 const body = document.querySelector('body')
 const linkedinIcon = document.querySelector('.fa-linkedin')
 const githubIcon = document.querySelector('.fa-github')
+const eachProject = document.querySelectorAll('.item h2')
+console.log(eachProject);
 
 toggleTheme.addEventListener('click',()=>{
     body.classList.toggle('whiteTheme')
@@ -45,7 +47,9 @@ toggleTheme.addEventListener('click',()=>{
     
     toggleTheme.classList.toggle('whiteTheme')    
     toggleThemeLanguage.classList.toggle('whiteTheme')    
-
+    eachProject.forEach(project=>{
+        project.classList.toggle('whiteTheme')
+    })
 
     const toggleIcon=()=>{
         const toggleIcon = document.querySelector('#toggleIcon')
