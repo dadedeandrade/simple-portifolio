@@ -5,12 +5,10 @@ body.whiteTheme {
     color: black;
     background: linear-gradient(#f3f3f3, #d1d1d1);
     ;
-    transition: 0.5s;
 }
 
 footer .userMedia ul li a i.whiteTheme {
     color: black;
-    transition: 0.5s;
 }
 
 /*------------------ Language Button  */
@@ -59,3 +57,8 @@ footer .userMedia ul li a i.whiteTheme {
         background-color: black;
         color: white;
       }
+
+
+.blackGround.whiteTheme {
+  transition: 55s;
+  }
