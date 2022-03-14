@@ -37,10 +37,12 @@ const body = document.querySelector('body')
 const linkedinIcon = document.querySelector('.fa-linkedin')
 const githubIcon = document.querySelector('.fa-github')
 const eachProject = document.querySelectorAll('.item h2')
+
 console.log(eachProject);
 
 toggleTheme.addEventListener('click',()=>{
     body.classList.toggle('whiteTheme')
+    canvas.classList.toggle('whiteTheme')
     
     linkedinIcon.classList.toggle('whiteTheme')
     githubIcon.classList.toggle('whiteTheme')

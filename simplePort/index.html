@@ -12,113 +12,116 @@
 </head>
 
 <body>
-  <section class="mainContent">
-    <header>
-
-      <button style="display:none;" id="burgerBtn">Menu</button>
-      <section class="toggleSection">
-  
-        
-        <div class="languageDiv">
-          <div id="toggleLanguage">
-            <i class="indicatorLanguage"></i>
+  <canvas id="Matrix"></canvas>
+    <section class="mainContent">
+        <header>
+    
+          <button style="display:none;" id="burgerBtn">Menu</button>
+          <section class="toggleSection">
+      
+            
+            <div class="languageDiv">
+              <div id="toggleLanguage">
+                <i class="indicatorLanguage"></i>
+              </div>
+            </div>
+            
+            <div class="themeDiv">
+                <div id="toggleTheme">
+                  <i class="indicatorTheme">
+                    <i id="toggleIcon" class="gg-sun"></i>
+                  </i>
+                </div>
+            </div>
+    
+          </section>
+    
+      
+            <div class="headerTextDiv">
+              <h1>Hi, Welcome to my portifolio!</h1>
+              <h2>Here you can find all my on-going projects with the stacks im currently working, hope you enjoy :)</h2>
+            </div>
+    
+        </header>
+    
+        <main>
+          <!-- Adicionado ID em alguns elementos para traducao no JS -->
+          <ul>
+    
+            <!-- <li>
+            <li>
+              <a href="https://dowhiledesafiobootstrap.andradeviniiciu.repl.co/" target="_blank">
+                <div class="item">
+                  <h2>The Process</h2>
+                  <div class='itemStack'>
+                    <p>Bootstrap</p>
+                    <p>JS</p>
+                    <p>Sass</p>
+                  </div>
+    
+                </div>
+              </a>
+            </li>
+            
+            
+            
+              <a href="https://andradeviniicius.github.io/portfolioWithBulma/" target="_blank">
+                <div class="item">
+                  <h2 id="currBulma">Curriculum with Bulma</h2>
+                  <div class='itemStack'>
+                    <p>Bulma</p>
+                    <p>jQuery</p>
+                  </div>
+    
+                </div>
+              </a>
+            </li> -->
+            <li>
+              <a href="https://aluracord-dade-andradeviniicius.vercel.app/" target="_blank">
+                <div class="item">
+                  <h2 id="liveChat">Coffebreak RealTime Chat</h2>
+                  <div class='itemStack'>
+                    <p>NextJS</p>
+                    <p>React</p>
+                    <p>Skynexui</p>
+                    <p>CSS</p>
+                    <p>Supabase</p>
+                  </div>
+    
+                </div>
+              </a>
+            </li>
+          </ul>
+        </main>
+    
+        <footer>
+          <div class="userMedia">
+            <p>
+              Social media:
+            </p>
+            <ul id="socialLinks">
+              <li>
+                <a href="https://github.com/andradeviniicius" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/vinicius-andrade-sc/" target="">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+    
+            </ul>
           </div>
-        </div>
-        
-        <div class="themeDiv">
-            <div id="toggleTheme">
-              <i class="indicatorTheme">
-                <i id="toggleIcon" class="gg-sun"></i>
-              </i>
-            </div>
-        </div>
-
-      </section>
-
+    
+        </footer>
   
-        <div class="headerTextDiv">
-          <h1>Hi, Welcome to my portifolio!</h1>
-          <h2>Here you can find all my on-going projects with the stacks im currently working, hope you enjoy :)</h2>
-        </div>
+    </section>
+  
 
-    </header>
-
-    <main>
-      <!-- Adicionado ID em alguns elementos para traducao no JS -->
-      <ul>
-
-        <!-- <li>
-        <li>
-          <a href="https://dowhiledesafiobootstrap.andradeviniiciu.repl.co/" target="_blank">
-            <div class="item">
-              <h2>The Process</h2>
-              <div class='itemStack'>
-                <p>Bootstrap</p>
-                <p>JS</p>
-                <p>Sass</p>
-              </div>
-
-            </div>
-          </a>
-        </li>
-        
-        
-        
-          <a href="https://andradeviniicius.github.io/portfolioWithBulma/" target="_blank">
-            <div class="item">
-              <h2 id="currBulma">Curriculum with Bulma</h2>
-              <div class='itemStack'>
-                <p>Bulma</p>
-                <p>jQuery</p>
-              </div>
-
-            </div>
-          </a>
-        </li> -->
-        <li>
-          <a href="https://aluracord-dade-andradeviniicius.vercel.app/" target="_blank">
-            <div class="item">
-              <h2 id="liveChat">Coffebreak RealTime Chat</h2>
-              <div class='itemStack'>
-                <p>NextJS</p>
-                <p>React</p>
-                <p>Skynexui</p>
-                <p>CSS</p>
-                <p>Supabase</p>
-              </div>
-
-            </div>
-          </a>
-        </li>
-      </ul>
-    </main>
-
-    <footer>
-      <div class="userMedia">
-        <p>
-          Social media:
-        </p>
-        <ul id="socialLinks">
-          <li>
-            <a href="https://github.com/andradeviniicius" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/vinicius-andrade-sc/" target="">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-
-        </ul>
-      </div>
-
-    </footer>
-
-  </section>
 
   <script src="scripts/main.js"></script>
-  <script src="scripts/main.js"></script>
+  <script src="scripts/matrixEffect.js"></script>
 </body>
 
 </html>
