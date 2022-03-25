@@ -10,8 +10,8 @@ toggleLanguage.addEventListener('click',()=>{
             const itemDetails = document.querySelector('.itemDetails')
             h1.innerHTML='Olá, seja bem vindo ao meu portifólio!'
             h2.innerHTML='Aqui você consegue acessar todos meus projetos em andamento com as stacks utilizadas e que tenho conhecimento, espero que goste :)'
-            liveChat.innerHTML='CoffeBreak Chat em Tempo real'
             socialMedia.innerHTML='Redes sociais:'
+            itemDetails.classList.toggle('heightFix')
             itemDetails.innerText='Esse projeto foi criado com o intuito de disponibilizar um ambiente agradável para desenvolvedores terem a possibilidade de um coffeBreak em home-office. Acredito na importancia de um momento de distração durante a jornada de trabalho e no home-office o momento do cafézinho se perdeu, por isso a ideia do projeto, O MVP que seria o chat já está disponibilizado e futuramente outras funções serão implementadas como uma radio colaborativa, mensagens privadas, cadastro de usurio e por aí vai :)';
             
         } else {
