@@ -52,7 +52,7 @@ toggleTheme.addEventListener('click',()=>{
     eachProject.forEach(project=>{
         project.classList.toggle('whiteTheme')
     })
-
+    
     const toggleIcon=()=>{
         const toggleIcon = document.querySelector('#toggleIcon')
         if(toggleIcon.classList =='gg-sun'){
@@ -66,3 +66,19 @@ toggleTheme.addEventListener('click',()=>{
     }
     toggleIcon()
 })
+
+function addActiveClassOnHover(elem){
+    document.querySelector(`#${elem}`).classList.add('active')
+}
+function removeActiveClassOnHover(elem){
+    document.querySelector(`#${elem}`).classList.remove('active')
+}
+
+
+
+const itemDetails = document.querySelector('.itemDetails')
+liveChat.addEventListener('mouseover',()=>{
+
+    })
+
+
