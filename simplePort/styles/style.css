@@ -142,7 +142,6 @@ body {
   width: 100%;
   min-height: 100%;
 
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,7 +332,7 @@ footer .userMedia ul li a i {
 }
 
 
-.livechatItemDetails, .pokedexItemDetails{
+.livechatItemDetails, .pokedexItemDetails, .foodwebItemDetails{
   position: relative;
   background: linear-gradient(to bottom, #222,rgb(29, 29, 29));
   font-size: 10px;
@@ -346,7 +345,7 @@ footer .userMedia ul li a i {
 
 
 @media (max-width: 768px) {
-  .livechatItemDetails, .pokedexItemDetails{
+  .livechatItemDetails, .pokedexItemDetails, .foodwebItemDetails{
     display: none;
   }
   #Matrix {
@@ -362,11 +361,24 @@ footer .userMedia ul li a i {
 .pokedexItemDetails.active {
   height: 55px;
   padding: 5px;
+  
+}
+.foodwebItemDetails.active{
+  height: 55px;
+  padding: 5px;
 
 }
 
 
-.livechatItemDetails.active.heightFix, .pokedexItemDetails.active.heightFix{
+.livechatItemDetails.active.heightFix {
   height: 170px;
   padding: 5px;
+}
+
+.foodwebItemDetails.active.heightFix {
+  
+}
+
+.pokedexItemDetails.active.heightFix {
+
 }
