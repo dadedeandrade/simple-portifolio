@@ -335,7 +335,7 @@ h1,h2,p {
 }
 
 
-.itemDetails{
+.livechatItemDetails{
   position: relative;
   background: linear-gradient(to bottom, #222,rgb(29, 29, 29));
   font-size: 10px;
@@ -346,7 +346,7 @@ h1,h2,p {
 
 
 @media (max-width: 768px) {
-  .itemDetails{
+  .livechatItemDetails{
     display: none;
   }
   #Matrix {
@@ -355,13 +355,13 @@ h1,h2,p {
 }
 
 
-.itemDetails.active{
+.livechatItemDetails.active{
   height: 185px;
   padding: 5px;
 }
 
 
-.itemDetails.active.heightFix{
+.livechatItemDetails.active.heightFix{
   height: 170px;
   padding: 5px;
 }

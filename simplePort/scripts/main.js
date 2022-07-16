@@ -77,7 +77,7 @@ function removeActiveClassOnHover(elem) {
 
 
 
-const itemDetails = document.querySelector('.itemDetails')
+const itemDetails = document.querySelector('.livechatItemDetails')
 liveChat.addEventListener('mouseover', () => {
 
 })
