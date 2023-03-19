@@ -332,7 +332,7 @@ footer .userMedia ul li a i {
 }
 
 
-.livechatItemDetails, .pokedexItemDetails, .foodwebItemDetails{
+.livechatItemDetails, .pokedexItemDetails, .foodwebItemDetails, webOperationalSystemJSItemDetails{
   position: relative;
   background: linear-gradient(to bottom, #222,rgb(29, 29, 29));
   font-size: 10px;
@@ -345,7 +345,7 @@ footer .userMedia ul li a i {
 
 
 @media (max-width: 768px) {
-  .livechatItemDetails, .pokedexItemDetails, .foodwebItemDetails{
+  .livechatItemDetails, .pokedexItemDetails, .foodwebItemDetails,webOperationalSystemJSItemDetails {
     display: none;
   }
   #Matrix {
@@ -368,6 +368,11 @@ footer .userMedia ul li a i {
   padding: 5px;
 
 }
+.webOperationalSystemJSItemDetails.active{
+  height: 55px;
+  padding: 5px;
+
+}
 
 
 .livechatItemDetails.active.heightFix {
@@ -380,5 +385,8 @@ footer .userMedia ul li a i {
 }
 
 .pokedexItemDetails.active.heightFix {
+
+}
+.webOperationalSystemJSItemDetails.active.heightFix {
 
 }

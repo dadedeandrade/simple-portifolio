@@ -55,8 +55,6 @@ const linkedinIcon = document.querySelector('.fa-linkedin')
 const githubIcon = document.querySelector('.fa-github')
 const eachProject = document.querySelectorAll('.item h2')
 
-console.log(eachProject);
-
 toggleTheme.addEventListener('click', () => {
     body.classList.toggle('whiteTheme')
     canvas.classList.toggle('whiteTheme')
@@ -91,10 +89,10 @@ function removeActiveClassOnHover(elem) {
     document.querySelector(`#${elem}`).classList.remove('active')
 }
 
-// function bootingScreen() {
+ function bootingScreen() {
 
-//     setTimeout(() => document.getElementById('bootSection').classList.add('booting-finish'), 5000)
-//     setTimeout(() => document.getElementById('bootText').classList.add('booting-finish'), 5000)
+     setTimeout(() => document.getElementById('bootSection').classList.add('booting-finish'), 5000)
+     setTimeout(() => document.getElementById('bootText').classList.add('booting-finish'), 5000)
 
-// }
-// bootingScreen()
+ }
+ bootingScreen()
