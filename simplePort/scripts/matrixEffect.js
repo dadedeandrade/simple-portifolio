@@ -2,7 +2,7 @@ const canvas = document.getElementById('Matrix');
 const blackGround = document.getElementById('blackGround')
 
 const context = canvas.getContext('2d');
-console.log(canvas)
+
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
