@@ -126,13 +126,11 @@ html {
   margin: 0px;
   height: 100%;
   width: 100%;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 #Matrix {
   z-index: -100;
-  position: absolute;
+  position: fixed;
 }
 
 body {
@@ -288,10 +286,6 @@ footer .userMedia ul li a i {
 }
 
 @media (max-width: 768px) {
-  body {
-    height: 100%;
-  }
-
   .content {
     padding-top: 0px;
   }
@@ -343,9 +337,6 @@ h1,h2,p {
 @media (max-width: 768px) {
   .itemDetails{
     display: none;
-  }
-  #Matrix {
-    height: 100vh;
   }
 }
 
