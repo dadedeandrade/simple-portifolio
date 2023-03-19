@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300&family=Roboto:wght@300&display=swap");
 
 :root {
-  --sizeButton: 55px
+  --sizeButton: 55px;
 }
 
 * {
@@ -11,7 +11,6 @@
   font-family: Poppins;
 }
 
-
 .booting-finish {
   display: none !important;
   z-index: -100;
@@ -20,29 +19,29 @@
 @-webkit-keyframes booting {
   0% {
     -webkit-transform: scale(20);
-            transform: scale(20);
+    transform: scale(20);
     -webkit-filter: blur(4px);
-            filter: blur(4px);
+    filter: blur(4px);
   }
   20% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
   80% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
     -webkit-filter: blur(4px);
-            filter: blur(4px);
+    filter: blur(4px);
     opacity: 0;
   }
 }
@@ -50,29 +49,29 @@
 @keyframes booting {
   0% {
     -webkit-transform: scale(20);
-            transform: scale(20);
+    transform: scale(20);
     -webkit-filter: blur(4px);
-            filter: blur(4px);
+    filter: blur(4px);
   }
   20% {
     -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
   80% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
     -webkit-filter: blur(4px);
-            filter: blur(4px);
+    filter: blur(4px);
     opacity: 0;
   }
 }
@@ -82,12 +81,17 @@
   width: 100%;
   height: 100%;
   z-index: 11;
-  background: linear-gradient(26deg, rgba(48,48,48,1) 75%, rgba(79,79,79,1) 98%),rgba(0,0,0,1) 0%;
+  background: linear-gradient(
+      26deg,
+      rgba(48, 48, 48, 1) 75%,
+      rgba(79, 79, 79, 1) 98%
+    ),
+    rgba(0, 0, 0, 1) 0%;
   background-size: 600% 600%;
   -webkit-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
   -webkit-animation: booting 5s forwards;
-          animation: booting 5s forwards;
+  animation: booting 5s forwards;
 }
 
 @-webkit-keyframes AnimationName {
@@ -121,21 +125,24 @@
   font-weight: 100;
 }
 
-
 html {
   margin: 0px;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 #Matrix {
   z-index: -100;
   position: fixed;
+  width: 120%;
+  height: 140vh;
 }
 
 body {
   transition: 0.5s;
-
+  width: 100%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,11 +151,8 @@ body {
   text-align: center;
 
   color: white;
-
 }
 .mainContent {
-
-
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -159,7 +163,7 @@ body {
   width: 75%;
 }
 /* Header */
-header{
+header {
   width: 60%;
 }
 
@@ -171,12 +175,11 @@ header .headerTextDiv {
 header .headerTextDiv h2{} */
 
 .toggleSection .languageDiv #toggleLanguage.active .indicatorLanguage {
-
-  left: calc(var(--sizeButton)/2);
+  left: calc(var(--sizeButton) / 2);
   box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
     inset 0 2px 8px rgba(112, 112, 112, 0.1),
     inset 0 -4px 4px rgba(112, 112, 112, 0.1);
-  background-image: url('../assets/brazil.png');
+  background-image: url("../assets/brazil.png");
   background-size: contain;
   background-position: center;
 }
@@ -225,10 +228,8 @@ main ul li a .item h2 {
   transition: 0.5s;
 }
 
-
 main ul li a .item .itemStack {
   display: flex;
-
 }
 
 main ul li a .item .itemStack p {
@@ -238,14 +239,11 @@ main ul li a .item .itemStack p {
   padding: 0px 8px;
   background-color: #707070;
   border-radius: 0px 0px 2.5px 2.5px;
-
 }
 
-.itemStack p:nth-child(n+2) {
+.itemStack p:nth-child(n + 2) {
   margin-left: 5px;
-
 }
-
 
 footer {
   display: flex;
@@ -271,7 +269,6 @@ footer .userMedia ul {
   gap: 0.5rem;
 
   height: 70px;
-
 }
 
 footer .userMedia ul li {
@@ -303,51 +300,54 @@ footer .userMedia ul li a i {
   /* No mobile transferir os botoes para o burger */
 }
 
-@media(max-width:425px){
+@media (max-width: 425px) {
   header {
-    width: 100% ;
+    width: 100%;
     font-size: 12px;
   }
 }
 
-h1,h2,p {
+h1,
+h2,
+p {
 }
 
 .blackGround {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7063200280112045) 53%, rgba(0,0,0,0) 73%);  
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7063200280112045) 53%,
+    rgba(0, 0, 0, 0) 73%
+  );
   position: absolute;
   transition: 15s;
 }
 
-
-.itemDetails{
+.itemDetails {
   position: relative;
-  background: linear-gradient(to bottom, #222,rgb(29, 29, 29));
+  background: linear-gradient(to bottom, #222, rgb(29, 29, 29));
   font-size: 10px;
   height: 0;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-
 @media (max-width: 768px) {
-  .itemDetails{
+  .itemDetails {
     display: none;
   }
 }
 
-
-.itemDetails.active{
+.itemDetails.active {
   height: 185px;
   padding: 5px;
 }
 
-
-.itemDetails.active.heightFix{
+.itemDetails.active.heightFix {
   height: 170px;
   padding: 5px;
 }
