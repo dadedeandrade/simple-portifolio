@@ -1,3 +1,13 @@
+function preloadImages() {
+  var imageUrls = ["../assets/brazil.png", "../assets/english.jfif"];
+
+  for (var i = 0; i < imageUrls.length; i++) {
+    var img = new Image();
+    img.src = imageUrls[i];
+  }
+}
+window.addEventListener('load', preloadImages);
+
 const toggleLanguage = document.querySelector("#toggleLanguage");
 
 toggleLanguage.addEventListener("click", () => {
