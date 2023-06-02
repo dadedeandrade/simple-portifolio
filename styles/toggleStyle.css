@@ -1,4 +1,3 @@
-
 .toggleSection {
   display: flex;
   gap: 7px;
@@ -11,20 +10,18 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  
 }
 
 .toggleSection .languageDiv #toggleLanguage {
   position: relative;
   display: block;
   width: var(--sizeButton);
-  height: calc(var(--sizeButton)/2);
+  height: calc(var(--sizeButton) / 2);
   background-color: #fff;
   transition: 0.5s;
   border-radius: 160px;
   cursor: pointer;
-  box-shadow:
-    inset 0px 2px 60px rgba(0, 0, 0, 0.1),
+  box-shadow: inset 0px 2px 60px rgba(0, 0, 0, 0.1),
     inset 0px 2px 8px rgba(0, 0, 0, 0.1),
     inset 0px -4px -8px rgba(0, 0, 0, 0.05);
   display: flex;
@@ -34,9 +31,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(var(--sizeButton)/2);
-  height: calc(var(--sizeButton)/2);
-  background-image: url('../assets/english.jfif');
+  width: calc(var(--sizeButton) / 2);
+  height: calc(var(--sizeButton) / 2);
+  background-image: url("../assets/english.jfif");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -58,13 +55,12 @@
   position: relative;
   display: block;
   width: var(--sizeButton);
-  height: calc(var(--sizeButton)/2);
+  height: calc(var(--sizeButton) / 2);
   background-color: #fff;
   transition: 0.5s;
   border-radius: 160px;
   cursor: pointer;
-  box-shadow:
-    inset 0px 2px 60px rgba(0, 0, 0, 0.1),
+  box-shadow: inset 0px 2px 60px rgba(0, 0, 0, 0.1),
     inset 0px 2px 8px rgba(0, 0, 0, 0.1),
     inset 0px -4px -4px rgba(0, 0, 0, 0.05);
   display: flex;
@@ -74,8 +70,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(var(--sizeButton)/2);
-  height: calc(var(--sizeButton)/2);
+  width: calc(var(--sizeButton) / 2);
+  height: calc(var(--sizeButton) / 2);
   background: linear-gradient(to bottom, #444, #222);
   border-radius: 50%;
   transform: scale(0.9);
@@ -84,7 +80,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .toggleSection .themeDiv #toggleTheme .indicatorTheme .gg-sun {
@@ -96,18 +91,17 @@
   transform: scale(var(--ggs, 1));
   width: 24px;
   height: 24px;
-  background:
-    linear-gradient(to bottom,
-      currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px,
-    linear-gradient(to bottom,
-      currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px,
-    linear-gradient(to bottom,
-      currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px,
-    linear-gradient(to bottom,
-      currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
+  background: linear-gradient(to bottom, currentColor 4px, transparent 0)
+      no-repeat 5px -6px/2px 6px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 5px
+      14px/2px 6px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat -8px 5px/6px
+      2px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 14px
+      5px/6px 2px;
   border-radius: 100px;
   box-shadow: inset 0 0 0 2px;
-  border: 6px solid transparent
+  border: 6px solid transparent;
 }
 
 .gg-sun::after,
@@ -121,22 +115,22 @@
   border-right: 4px solid;
   border-left: 4px solid;
   left: -6px;
-  top: 5px
+  top: 5px;
 }
 
 .gg-sun::before {
-  transform: rotate(-45deg)
+  transform: rotate(-45deg);
 }
 
 .gg-sun::after {
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }
 
 .toggleSection .themeDiv #toggleTheme .indicatorTheme .gg-moon,
 .gg-moon::after {
   display: block;
   box-sizing: border-box;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .gg-moon {
@@ -148,7 +142,7 @@
   border: 2px solid;
   color: black;
   transition: 0.5s;
-  border-bottom-color: transparent
+  border-bottom-color: transparent;
 }
 
 .gg-moon::after {
@@ -161,4 +155,3 @@
   top: 8px;
   left: 2px;
 }
-
