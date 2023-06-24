@@ -18,14 +18,18 @@ toggleLanguage.addEventListener("click", () => {
     const liveChat = document.querySelector("#liveChat");
     const pokedex = document.querySelector("#pokedex");
     const socialMedia = document.querySelector(".userMedia p");
-    const livechatItemDetails = document.querySelector(".livechatItemDetails p");
-    const findYourDuoItemDetails = document.querySelector(".findYourDuoItemDetails p");
+    const livechatItemDetails = document.querySelector(
+      ".livechatItemDetails p"
+    );
+    const findYourDuoItemDetails = document.querySelector(
+      ".findYourDuoItemDetails p"
+    );
     const webOsItemDetails = document.querySelector(
       ".webOperationalSystemJSItemDetails p"
     );
-    h1.innerText = "Olá, seja bem vindo ao meu portifólio!";
+    h1.innerText = "Olá, meu nome é Vinicius de Andrade!";
     h2.innerText =
-      "Aqui você consegue acessar todos meus projetos em andamento com as stacks utilizadas e que tenho conhecimento, espero que goste :)";
+      "Tenho 23 anos e sou um desenvolvedor Front-end com 2 anos de experiência \n Aqui você consegue acessar todos meus projetos em andamento com as stacks utilizadas e que tenho conhecimento, espero que goste :)";
     socialMedia.innerText = "Redes sociais:";
     livechatItemDetails.classList.add("heightFix");
     findYourDuoItemDetails.classList.add("heightFix");
@@ -41,7 +45,9 @@ toggleLanguage.addEventListener("click", () => {
     const h2 = document.querySelector("header h2");
     const liveChat = document.querySelector("#liveChat");
     const pokedex = document.querySelector("#pokedex");
-    const livechatItemDetails = document.querySelector(".livechatItemDetails p");
+    const livechatItemDetails = document.querySelector(
+      ".livechatItemDetails p"
+    );
     const webOsItemDetails = document.querySelector(
       ".webOperationalSystemJSItemDetails p"
     );
@@ -51,7 +57,7 @@ toggleLanguage.addEventListener("click", () => {
     const socialMedia = document.querySelector(".userMedia p");
     h1.innerText = "Hi, Welcome to my portifolio!";
     h2.innerText =
-      "Here you can find all my projects with the stacks im currently working, hope you enjoy :)";
+      "I am 23 years old and a Front-end developer with 2 years of experience \n Here you can find all my on-going projects with the stacks im currently working, hope you enjoy :)";
     liveChat.innerText = "CoffeBreak RealTime Chat";
     socialMedia.innerText = "Social Media:";
     livechatItemDetails.classList.remove("heightFix");
@@ -69,19 +75,21 @@ const toggleThemeLanguage = document.querySelector("#toggleLanguage");
 const body = document.querySelector("body");
 const linkedinIcon = document.querySelector(".fa-linkedin");
 const githubIcon = document.querySelector(".fa-github");
+const eachSocialLink = document.querySelectorAll("#socialLinks li a i");
 const eachProject = document.querySelectorAll(".item h2");
 
 toggleTheme.addEventListener("click", () => {
-  body.classList.toggle("whiteTheme");
-  canvas.classList.toggle("whiteTheme");
+  body.classList.toggle("blackTheme");
+  canvas.classList.toggle("blackTheme");
 
-  linkedinIcon.classList.toggle("whiteTheme");
-  githubIcon.classList.toggle("whiteTheme");
+  eachSocialLink.forEach((socialIcon) => {
+    socialIcon.classList.toggle("blackTheme");
+  });
 
-  toggleTheme.classList.toggle("whiteTheme");
-  toggleThemeLanguage.classList.toggle("whiteTheme");
+  toggleTheme.classList.toggle("blackTheme");
+  toggleThemeLanguage.classList.toggle("blackTheme");
   eachProject.forEach((project) => {
-    project.classList.toggle("whiteTheme");
+    project.classList.toggle("blackTheme");
   });
 
   const toggleIcon = () => {
@@ -104,15 +112,15 @@ function removeActiveClassOnHover(elem) {
   document.querySelector(`#${elem}`).classList.remove("active");
 }
 
-function bootingScreen() {
-  setTimeout(
-    () =>
-      document.getElementById("bootSection").classList.add("booting-finish"),
-    5000
-  );
-  setTimeout(
-    () => document.getElementById("bootText").classList.add("booting-finish"),
-    5000
-  );
-}
-bootingScreen();
+// function bootingScreen() {
+//   setTimeout(
+//     () =>
+//       document.getElementById("bootSection").classList.add("booting-finish"),
+//     5000
+//   );
+//   setTimeout(
+//     () => document.getElementById("bootText").classList.add("booting-finish"),
+//     5000
+//   );
+// }
+// bootingScreen();
