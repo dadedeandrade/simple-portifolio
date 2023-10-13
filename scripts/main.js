@@ -35,7 +35,7 @@ toggleLanguage.addEventListener("click", () => {
     findYourDuoItemDetails.classList.add("heightFix");
     webOsItemDetails.classList.add("heightFix");
     livechatItemDetails.innerText =
-      "Esse projeto foi criado com o intuito de disponibilizar um ambiente agradável para desenvolvedores terem a possibilidade de um coffeBreak em home-office. Acredito na importancia de um momento de distração durante a jornada de trabalho e no home-office o momento do cafézinho se perdeu, por isso a ideia do projeto, O MVP que seria o chat já está disponibilizado e futuramente outras funções serão implementadas como uma radio colaborativa, mensagens privadas, cadastro de usurio e por aí vai :)";
+      "O CoffeBreak Realtime Chat é uma plataforma de comunicação baseada na Web projetada para facilitar interações instantâneas e contínuas entre os usuários. Esse aplicativo permite que os usuários participem de conversas baseadas em texto com indivíduos em tempo real.";
     findYourDuoItemDetails.innerText =
       "Melhore a sua experiência de jogo com esse app para encontrar o duo ideal e conectar através do Discord. Filtre por jogo e estilo de jogo assim como dia da semana e horário disponível.";
     webOsItemDetails.innerText =
@@ -62,7 +62,7 @@ toggleLanguage.addEventListener("click", () => {
     socialMedia.innerText = "Social Media:";
     livechatItemDetails.classList.remove("heightFix");
     livechatItemDetails.innerText =
-      "The project aims to create a pleasant environment for developers to take a small break from home-office and chat with colleagues. The goal is to provide moments of distraction to maintain productivity, prevent burnout, and compensate for the lack of breaks in a home-office setting. The MVP is complete, and future plans include adding features such as a collaborative radio, private messages, user registration, and more. :)";
+      "The Coffebreak Real-Time Chat is a web-based communication platform designed to facilitate instant and seamless interactions between users. This application allows users to engage in text-based conversations with individuals in real-time. Key features include:";
     webOsItemDetails.innerText =
       "A replication of a operational system (Linux) using HTML, CSS and JS";
     findYourDuoItemDetails.innerText =
